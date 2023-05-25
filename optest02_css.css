@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+	margin: 20px;
+}
+
+section {
+	background: pink;
+	width: 500px;
+	display: table-cell; /*블록형태*/
+	vertical-align: middle; /*세로 가운데 정렬*/
+	text-align: center; /*가로 가운데 정렬*/
+	line-height: 100px; /*세로 간격*/
+}
+/*칸 하나하나 크기등 지정*/
+.menu_div {
+	padding: 10px;
+	width: 200px;
+}
+
+.font {
+	background: red;
+	color: white;
+}
+
+.font:hover {
+	background: gray;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.img {
+	width: 100px;
+	height: 100px;
+}
+
+.h02 {
+	display: none; /*해당내용을 숨긴다*/
+}
+
+.h01:hover {
+	display: none;
+}
+
+.h01:hover+.h02 {
+	display: block; /*숨긴내용을 보여준다*/
+}
+
+div {
+	text-align: center;
+}
+</style>
+
+</head>
+<body>
+	<h1>Hover Effect</h1>
+	<div class="h01">
+		<img class="img" src="img.png">
+	</div>
+	<div class="h02">
+		<button>기사</button>
+		<button>구독</button>
+	</div>
+
+</body>
+</html>

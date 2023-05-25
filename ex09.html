@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+.nav {
+	background: teal;
+}
+
+.nav>ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+.nav>ul li {
+	margin: 0px 3px;
+	padding: 10px;
+}
+
+.nav>ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+.nav>ul li a:hover {
+	color: orange;
+	/* border-bottom: 3px solid orange; */
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: orange;
+
+	/* transition: all 0.25s; */
+}
+</style>
+
+</head>
+<body>
+	<nav class="nav">
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">BOARD</a></li>
+			<li><a href="#">MEMBER_SHIP</a></li>
+		</ul>
+	</nav>
+	flex-start : 왼쪽 끝 정렬
+	<br> flex-end : 오른쪽 끝 정렬
+	<br> center : 가운데 정렬
+	<br> space-between : 양쪽 끝 정렬
+	<br> space-around : 요소 좌우 동일 간격으로 정렬
+	<br>
+</body>
+</html>

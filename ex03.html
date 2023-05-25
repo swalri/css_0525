@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+/* 하위 선택자 */
+.box p {
+	color: lime;
+}
+/* 자식 선택자 */
+.box>p {
+	color: orange;
+}
+/* 지정한 것 바로 뒤에 나오는 요소를 선택, 인접 선택자 */
+.box+div {
+	background: gray;
+}
+/* 같은층에 아래에 적혀 있는 요소를 선택, 형제 선택 */
+.box ~ p {background: green;}
+.box02 ~ p {background: green;}
+
+
+</style>
+
+</head>
+<body>
+
+	<div class="box">
+		<p>1. 하위선택자는 특정 선택자 하위의 모든 요소를 말한다</p>
+
+		<div class="box02">
+			<p>2. 자식 선택자는 직속 자식 요소를 말한다</p>
+		</div>
+
+		<p>3. 다음 내용</p>
+	</div>
+
+	<div>1. 인접 선택자는 바로 뒤에 나오는 하나의 요소</div>
+	<div>2. 인접 선택자는 바로 뒤에 나오는 하나의 요소</div>
+	<p>형제 선택자는 같은 계층에 있는 요소에 적용된다</p>
+	<p>형제 선택자는 같은 계층에 있는 요소에 적용된다</p>
+	<p>형제 선택자는 같은 계층에 있는 요소에 적용된다</p>
+
+</body>
+</html>
